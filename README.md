@@ -8,8 +8,8 @@ Instant shell script setup for a React skeleton project with a simple express se
   - Check via the command line:
   ```bash
   $ node --version
-  ``
-  ### Quickstart for Mac OS X only
+  ```
+- Quickstart for Mac OS X only
   - Clone this repository and run the setup script:
   ```bash
   $ git clone https://github.com/dankreiger/hol-das-baellchen.git

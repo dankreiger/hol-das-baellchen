@@ -44,20 +44,42 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
 
-var ingredients = [{"id":1, "text":"wauwau"}, {"id":2, "text":"pup2"}, {"id":3, "text":"pup3"}];
+var pups;
+
+pups = [{
+	id: 1,
+	text: "wauwau"
+}, {
+	id: 2,
+	text: "wag"
+}, {
+	id: 3,
+	text: "bark"
+}, {
+	id: 4,
+	text: "waggle"
+}, {
+	id: 5,
+	text: "platz"
+}, {
+	id: 6,
+	text: "awwww yes you are"
+}, {
+	id: 7,
+	text: "flop those ears"
+}];
 
 
-
-app.get('/ingredients', function(req, res) {
+app.get('/pups', function(req, res) {
     console.log("GET From SERVER");
-    res.send(ingredients);
+    res.send(pups);
 });
 
-app.post('/ingredients', function(req, res) {
-    var ingredient = req.body;
+app.post('/pups', function(req, res) {
+    var pup = req.body;
     console.log(req.body);
-    ingredients.push(ingredient);
-    res.status(200).send("Successfully posted ingredient");
+    pups.push(pup);
+    res.status(200).send("Successfully posted pup");
 });
 
 app.listen(6060);

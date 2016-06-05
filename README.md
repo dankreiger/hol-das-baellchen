@@ -9,6 +9,7 @@ Instant shell script setup for a React skeleton project with a simple express se
   ```bash
   $ node --version
   ```
+
 - Quickstart for Mac OS X only
 
   - Clone this repository and run the setup script:
@@ -17,4 +18,14 @@ Instant shell script setup for a React skeleton project with a simple express se
   $ cd hol-das-baellchen/
   $ chmod +x ./auto_setup.sh
   $ ./auto_setup.sh
+  ```
+
+  - After making updates, shut down and restart the watchify script and the node server:
+  ```bash
+  Ctrl+C
+  $ npm start
+  ```
+  ```bash
+  Ctrl+C
+  $ node server.js
   ```
